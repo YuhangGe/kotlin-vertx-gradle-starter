@@ -10,6 +10,10 @@ fun getGreeting(): String {
 class MainVerticle : AbstractVerticle() {
 
   override fun start() {
+    val a = B()
+    a.say()
+    val b = A()
+    b.say()
 
     val router = Router.router(vertx)
 

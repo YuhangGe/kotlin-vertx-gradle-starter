@@ -12,4 +12,6 @@ no-vertx 分支不包含 vert.x，是最简单的 kotlin + gradle 的 hello-worl
 
 ## master
 
-master 分支包含 vert.x
+master 分支包含 vert.x，并且有 java 和 kotlin 代码混用的例子，如果不需要 java 代码，
+将 `src/main/java` 目录删除即可。
+

@@ -32,7 +32,7 @@ mainClassName = "io.vertx.core.Launcher"
 sourceCompatibility = 1.8
 def vertxVersion = '3.4.1'
 def mainVerticleName = 'com.hansight.analysis.MainVerticle'
-def watchForChange = 'src/**/*'
+def watchForChange = 'src/main/**'
 def doOnChange = './gradlew classes'
 
 defaultTasks 'run'
