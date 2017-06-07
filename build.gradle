@@ -1,0 +1,38 @@
+group 'com.hansight'
+version '1.0-SNAPSHOT'
+
+buildscript {
+  ext.kotlin_version = '1.1.2-2'
+
+  repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    jcenter()
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+
+apply plugin: "kotlin"
+apply plugin: "application"
+
+sourceCompatibility = 1.8
+defaultTasks 'run'
+
+mainClassName = "com.hansight.analysis.MainKt"
+
+
+repositories {
+  mavenLocal()
+  maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+  jcenter()
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+  testCompile group: 'junit', name: 'junit', version: '4.12'
+  testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+}
